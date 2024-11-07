@@ -34,7 +34,7 @@ async def on_message(message):
 
 
     elif message.content.startswith('-iklim değişikliği fotoğrafları') or message.content.startswith('-iklim değişikliği foto') or message.content.startswith('-iklim foto'):
-        foto = os.listdir('foto')
+        foto = os.listdir('**Oluşturulmuş içinde fotoğraf olan klasör buraya**')
         rfoto = random.choice(foto)
         print(rfoto)
         with open(f'foto/{rfoto}', 'rb') as f:
